@@ -74,30 +74,3 @@ separate phases in a real migration programme. Running profiling before
 migration defines your baseline. Running validation after gives you
 before/after comparison. That's the discipline this project demonstrates.
 
-
-### What Are Generated
-data/
-  legacy.db                          ← Source billing system
-  migrated.db                        ← Post-migration system (with errors)
-  migration_reconciliation_report.txt
-  exports/
-    profile_structural.csv
-    profile_semantic.csv
-    profile_relational.csv
-    migration_summary.csv
-    recon_record_counts.csv
-    missing_customers.csv
-    missing_accounts.csv
-    missing_billing_cycles.csv
-    missing_payments.csv
-    recon_billing_discrepancies.csv
-    recon_payment_discrepancies.csv
-    recon_date_validation.csv
-    recon_null_injection.csv
-    recon_balance_drift.csv
-    recon_master.csv
-    pbi_summary_cards.csv
-    pbi_recon_master.csv
-    pbi_discrepancies_by_region.csv
-    pbi_discrepancies_by_fuel.csv
-    pbi_billing_trend.csv
